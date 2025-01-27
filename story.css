@@ -1,0 +1,325 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    max-width: 100vw;
+    position:absolute;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+@keyframes container{
+    0%{
+      transform: translateX(-50vw);
+    }
+    50%{
+        transform: translateX(0vw);
+    }
+    100%{
+      transform: translateX(0vw);
+    }
+}
+@keyframes term{
+  0%{
+      transform: translateX(0vw);
+  }
+  100%{
+      transform: translateX(50vw);
+  }
+}
+#ref{
+    display: flex;
+    /* flex-wrap: wrap; */
+    position: fixed;
+    justify-content: space-between;
+    gap: 30px;
+    padding:min(2em, 8%);
+    background-color:white;
+    width: 100%;
+    z-index: 2000;
+}
+#blog{
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: space-evenly;
+    gap: 30px;
+    align-items: center;
+    font-weight: 500;
+    font-size: 25px;
+}
+a:hover{
+    text-decoration: underline;
+    text-decoration-color: blue;
+}
+a:active{
+    background-color: bisque;
+}
+a:visited{
+    color: darkolivegreen;
+}
+#div{
+    border: 1px solid black;
+    width: 2px;
+    height: 20px;
+    border-top: 0;
+    border-bottom: 0;
+}
+#class{
+    display: flex;
+    justify-content: space-evenly;
+    gap:30px;
+}
+#bus{
+    display:none ;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+#frame{
+    display: flex;
+    /* flex-wrap: wrap; */
+    flex-direction: row;
+    justify-content: space-evenly;
+    /* padding: 50px 40px 0px 30px; */
+    align-content: center;
+    margin-top: 50px;
+    width: 50%; 
+    
+}
+#frame #img{
+     margin-top: 80px;
+     animation: container 2.0s linear  1;
+
+}
+.img{
+    position: absolute;
+    z-index: 80;
+    animation: term 1.0s linear  1 reverse ;
+}
+#how{
+    background-color: rgba(252, 227, 195, 0.532);
+    width: 100%;
+    height: 400px;
+    padding:60px 60px 200px 60px; 
+    position:relative;
+    font-size: 17px;
+    font-weight: 600;
+    margin-top: 28px;
+}
+#why{
+    background-color: rgb(11, 11, 48);
+    color: white;
+    font-size: 17px;
+    font-weight: 600;
+    padding: 60px;
+    text-align: center;
+    word-spacing: 10px;
+    line-height: 30px;
+}
+#being{
+    background-color: rgba(252, 227, 195, 0.532);
+    display: flex;
+    /* flex-wrap: wrap; */
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 50px;
+    padding: 40px 30px 30px 80px;
+    word-spacing: 10px;
+    font-size: 17px;
+}
+#vision{
+    display: flex;
+    /* flex-wrap: wrap; */
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 20px;
+    padding: 50px 30px 60px 30px;
+    text-align: center;
+    background-color: white;
+    height: 300px;
+}
+.visit1, .visit2 {
+    border-radius: 20px;
+    width: 520px;
+    height: 270px;
+    padding: 40px;
+    word-spacing: 10px;
+    line-height: 25px;
+    background-color: white;
+    box-shadow: 0px 0px 5px 10px rgba(0, 0, 0, 0.105) ;
+
+
+}
+#vis{
+    background: rgb(9, 9, 51);
+    height: 460px;
+}
+.visit2{
+    height: 330px;
+}
+#Better{
+    display: flex;
+    /* flex-wrap: wrap; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px;
+    background-color: rgba(252, 227, 195, 0.532) ;
+}
+#buid{
+    font-size: 17px;
+    word-spacing: 10px;
+}
+.sdg{
+   display: flex;
+   /* flex-wrap: wrap; */
+   flex-direction: row;
+   align-items: center;
+   font-size: 25px;
+   font-weight: 500;
+   padding: 30px;
+   gap: 20px;
+}
+#sdg{
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+    background-color: white;
+    box-shadow:0px 0px 5px 3px rgba(0, 0, 0, 0.281) ;
+    width: 250px;
+    height: 130px;
+    border-radius: 20px;
+    align-items: center;
+    text-align: center;
+
+}
+#part{
+    display: flex;
+    /* flex-wrap: wrap; */
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 40px 70px 80px 50px;
+    background-color: rgb(9, 9, 39);
+    color: white;
+    height: 260px;
+    align-items: center;
+}
+button{
+    width: 250px;
+    height: 50px;
+    border-radius: 20px;
+    background-color: orange;
+    color: white;
+    font-size: 20px;
+    border:none
+
+}
+button:hover{
+    scale: 1.2;
+    transition-duration: 0.6s;
+    transition-timing-function: linear;
+}
+#icon{
+    display: flex;
+    /* flex-wrap: wrap; */
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 50px;
+    gap: 40px;
+    align-items: center;
+}
+#icon p{
+    font-size: 18px;
+    font-weight: 100px
+}
+.fat{
+    display: flex;
+    /* flex-wrap: wrap; */
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 40px;
+}
+#copy{
+    text-align: center;
+    padding: 20px;
+}
+hr{
+    margin-left: 50px;
+    margin-right: 50px;
+}
+@media only screen and (max-width:767px){
+    /* #ref{
+        /* display: flex;        
+       align-items: start;
+       justify-content: left; */
+    
+    #frame{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding:30px ;
+        margin-bottom: 500px;
+        width: 530px;
+    }
+    #how{
+        width: 530px;
+    }
+    #why{
+        width: 530px;
+    }
+    #being{
+        display: flex;
+        flex-direction: column;
+        width: 530px;
+    }
+    #vision{
+        display: flex;
+        flex-direction: column;
+        width: 530px;
+        padding: 30px;
+
+    }
+    #vis{
+     width: 550px;
+    }
+    #blog{
+        display: none;
+    }
+    #bus{
+       display: flex;
+    }
+    #Better{
+        display: flex;
+        flex-direction: column;
+        margin-top: 140px;
+        width: 530px;
+    }
+    .sdg{
+        display: flex;
+        flex-direction: column;
+        width: 500px;
+
+    }
+    #part{
+        flex-direction: column;
+        gap: 30px;
+        height: 400px;
+    }
+    button{
+        height: 80px;
+        width: 250px;
+    }
+    #icon{
+        flex-direction: column;
+    }
+    /* #ref{
+        text-transform: capitalize;
+        font-size: 10px;
+    } */
+}
+    
+    
+    

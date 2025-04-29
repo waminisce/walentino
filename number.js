@@ -16,7 +16,7 @@ form.addEventListener('submit',checkNumber)
 
 function checkNumber(event){
     event.preventDefault()
-    let check = /\d{11}/
+    let check = /^\d{11}$/
     let checker = input.value.trim();
     let checke = checker.match(check)
     let regular = regx.test(checker)

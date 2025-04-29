@@ -30,7 +30,9 @@ function checkNumber(event){
          return;
     }else if(!checke){
        result.innerHTML = `this is incorrect phone number ${checker}`
+
     }
+    
     else{
         if(regular == true){
             result.innerHTML = `your phone number is 9MOBILE ${checker}`

@@ -40,6 +40,9 @@ function checkNumber(event){
         else if(regularair == true){
             result.innerHTML = `your phone number is AIRTEL ${checker}`
         }
+        else{
+             result.innerHTML = `this is no a NIGERIA phone number ${checker}`
+        }
     }
 
 

@@ -1,3 +1,4 @@
+
 const form = document.getElementById('form');
 const input = document.getElementById('phone-number');
 const result = document.getElementById('result');
@@ -27,9 +28,11 @@ function checkNumber(event){
     let regularmtn = regmtn.test(checker)
 
     if(checker === ""){
+         result.style.display = 'block'
          result.innerHTML = ` enter your number please`
          return;
-    }else if(!checke){
+    }else if(!checke){  
+       result.style.display = 'block'
        result.innerHTML = `this is incorrect phone number ${checker}`
 
     }
@@ -37,6 +40,7 @@ function checkNumber(event){
     else{
         if(regular == true){
             imageDisplay.innerHTML = `<img id='image-show' src='${MOBILE}'>`
+            result.style.display = 'block'
             result.innerHTML = `<div id='mobile'>
             <img id='image-show' src='${MOBILE}'>
             <p>your phone number is 9MOBILE ${checker}</p>
@@ -46,6 +50,7 @@ function checkNumber(event){
     
         else if(regularmtn == true){
             imageDisplay.innerHTML = `<img id='image-show' src='${MTN}'>`
+            result.style.display = 'block'
             result.innerHTML = `<div id='mtn'>
             <img id='image-show' src='${MTN}'>
             <p>your phone number is MTN NIGERIA ${checker}</p>
@@ -54,6 +59,7 @@ function checkNumber(event){
         }
         else if(regulatglo == true){
             imageDisplay.innerHTML = `<img id='image-show' src='${GLO}'>`
+            result.style.display = 'block'
             result.innerHTML = ` <div id='glo'>
             <img id='image-show' src='${GLO}'>
             <p>your phone number is GLOBACOM ${checker}</p>
@@ -62,6 +68,7 @@ function checkNumber(event){
         }
         else if(regularair == true){
             imageDisplay.innerHTML = `<img id='image-show' src='${AIRTEL}'>`
+            result.style.display = 'block'
             result.innerHTML = `<div id='airtel'>
             <img id='image-show' src='${AIRTEL}'>
             <p>your phone number is AIRTEL ${checker}</p>
@@ -69,6 +76,7 @@ function checkNumber(event){
             return;
         }
         else{
+             result.style.display = 'block'
              result.innerHTML = `this is not a NIGERIA phone number ${checker}`
         }
     }
